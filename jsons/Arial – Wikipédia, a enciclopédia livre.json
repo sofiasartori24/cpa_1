@@ -1,0 +1,20 @@
+{
+    "titulo": "Arial",
+    "Classificação": "sem-serifa - neogrotesca transaccional",
+    "Ano": "1982",
+    "Designer": "Robin Nicholas e Patricia Saunders",
+    "Empresa": "Monotype",
+    "Cliente": "IBM e posteriormente Microsoft",
+    "Licença": "proprietária",
+    "Embutir": "Instalação permitida em documentos",
+    "Optimizada para": "Monitor e impressão",
+    "Formatos": "TrueType , PostScript , OpenType",
+    "Versões": "1.00 1.77 2.00(WGL4) 2.00(Win ANSI) 2.01 2.40 2.45 2.50 2.55 2.76 2.82 2.95 3.00",
+    "Nº, grafemas": "1674 (versão 3.00)",
+    "PANOSE": "Arial Regular: 2 11 6 4 2 2 2 2 2 4 Arial Italic: 2 11 6 4 2 2 9 9 2 4 Arial Bold: 2 11 7 4 2 2 2 2 2 4 Arial Bold Italic: 2 11 7 4 2 2 9 9 2 4",
+    "Unicode": "1252, 1250, 1251, 1253, 1254, 1255, 1256, 1257, 1258, OEM, 869, 866, 865, 864, 863, 862, 861, 860, 857, 855, 852, 775, 737, 708, 850, 437",
+    "Estilos": "Regular, Bold, Italic, Bold Italic",
+    "Variantes": "Arial Black, Arial Bold, Arial Condensed, Arial Extra Bold, Arial Light, Arial Light Condensed, Arial Medium, Arial Monospaced, Arial Narrow, Arial Rounded, Arial CE, Arial Narrow CE, Arial Unicode MT, Arial Unicode MS",
+    "Similares": "Helvetica , Grotesque",
+    "Website": "www.monotypeimaging.com"
+}

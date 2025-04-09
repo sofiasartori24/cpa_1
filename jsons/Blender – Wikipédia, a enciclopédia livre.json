@@ -1,0 +1,23 @@
+{
+    "titulo": "Blender",
+    "Autor": "Ton Roosendaal",
+    "Desenvolvedor": "Blender Foundation",
+    "Plataforma": "x86-64 , ARM e Apple Silicon",
+    "Modelo do desenvolvimento": "Software livre",
+    "Lançamento": "2 de janeiro de 1994 (31 anos) [1]",
+    "Versão, estável": "4.4.0 [2] (18 março 2025)",
+    "Idioma(s)": "36 idiomas",
+    "Escrito em": "C , C++ e Python",
+    "Sistema operacional": "Windows , macOS e Linux",
+    "Gênero(s)": "Suíte 3D",
+    "Licença": "GNU GPLv2+ [3]",
+    "Tamanho": [
+        "342 MB (Windows - x86-64)",
+        "305 MB (Windows - ARM)",
+        "315 MB (macOS - Intel)",
+        "290 MB (macOS - APL)",
+        "356 MB (Linux)[4]"
+    ],
+    "Página oficial": "www.blender.org",
+    "Repositório": "projects.blender.org/blender/blender"
+}

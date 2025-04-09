@@ -1,0 +1,10 @@
+{
+    "titulo": "Linfócito T",
+    "Subclasse de": "linfócito",
+    "Desenvolve-se a partir de": "célula precursora de T",
+    "Nomeada em referência a": "timo",
+    "Localização anatômica": "sangue , sistema linfático",
+    "Cell Ontology": "CL_0000084",
+    "MeSH": "D013601",
+    "Foundational Model of Anatomy": "62870"
+}

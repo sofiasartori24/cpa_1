@@ -1,0 +1,15 @@
+{
+    "titulo": "Guix System Distribution vde",
+    "Desenvolvedor": "Projeto GNU [3] [4]",
+    "Arquiteturas": "arm x86 x86-64",
+    "Modelo do desenvolvimento": "Software Livre",
+    "Versão, estável": "1.4.0 [5] / 19 de dezembro de 2022 ; há 2 anos",
+    "Língua natural": "Multilíngue",
+    "Família": "GNU",
+    "Núcleo": "Linux , GNU Hurd",
+    "Gerenciamento de pacotes": "GNU Guix",
+    "Licença": "GNU GPL",
+    "Estado do desenvolvimento": "Corrente",
+    "Website": "gnu.org/software/guix .",
+    "Origem comum": "Estados Unidos"
+}

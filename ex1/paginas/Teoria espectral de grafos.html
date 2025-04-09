@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="pt" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Teoria espectral de grafos – Wikipédia, a enciclopédia livre</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )ptwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"],"wgRequestId":"8221c057-0d17-4bc5-8cdf-154ae983216b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Teoria_espectral_de_grafos","wgTitle":"Teoria espectral de grafos","wgCurRevisionId":66637148,"wgRevisionId":66637148,"wgArticleId":3636285,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["!CS1 inglês-fontes em língua (en)","!Predefinição Webarchive wayback links","!Páginas que usam hiperligações mágicas ISBN","!Esboços sobre matemática","!Esboços maiores que 10000 bytes","Álgebra linear","Combinatória","Teoria dos grafos"],"wgPageViewLanguage":"pt","wgPageContentLanguage":"pt","wgPageContentModel":"wikitext","wgRelevantPageName":"Teoria_espectral_de_grafos","wgRelevantArticleId":3636285,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"pt","pageLanguageDir":"ltr","pageVariantFallbacks":"pt"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q3180727","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":true,"wgGELevelingUpEnabledForUser":false,"wgSiteNoticeId":"2.30"};
+RLSTATE={"ext.gadget.FeedbackHighlight-base":"ready","ext.gadget.keepPDU":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediamessages.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.wikimediaBadges":"ready","ext.dismissableSiteNotice.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.Topicon","ext.gadget.Metacaixa","ext.gadget.TitleRewrite","ext.gadget.ElementosOcultaveis","ext.gadget.FeedbackHighlight","ext.gadget.ReferenceTooltips","ext.gadget.NewVillagePump","ext.gadget.wikibugs","ext.gadget.charinsert","ext.gadget.requestForAdminship","ext.gadget.WikiMiniAtlas","ext.gadget.PagesForDeletion","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession","oojs-ui.styles.icons-media","oojs-ui-core.icons","ext.dismissableSiteNotice"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=ext.cite.styles%7Cext.dismissableSiteNotice.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=pt&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=ext.gadget.FeedbackHighlight-base%2CkeepPDU&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=pt&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.44.0-wmf.23">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/1200px-Complete-edge-coloring.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/800px-Complete-edge-coloring.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/640px-Complete-edge-coloring.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="640">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Teoria espectral de grafos – Wikipédia, a enciclopédia livre">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="//pt.m.wikipedia.org/wiki/Teoria_espectral_de_grafos">
+<link rel="alternate" type="application/x-wiki" title="Editar" href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipédia (pt)">
+<link rel="EditURI" type="application/rsd+xml" href="//pt.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://pt.wikipedia.org/wiki/Teoria_espectral_de_grafos">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">
+<link rel="alternate" type="application/atom+xml" title="&#039;&#039;Feed&#039;&#039; Atom Wikipédia" href="/w/index.php?title=Especial:Mudan%C3%A7as_recentes&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Teoria_espectral_de_grafos rootpage-Teoria_espectral_de_grafos skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Saltar para o conteúdo</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="&#039;&#039;Site&#039;&#039;">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Menu principal" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Menu principal"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Menu principal</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Menu principal</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navegação
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" title="Visitar a página principal [z]" accesskey="z"><span>Página principal</span></a></li><li id="n-featuredcontent" class="mw-list-item"><a href="/wiki/Portal:Conte%C3%BAdo_destacado"><span>Conteúdo destacado</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Eventos_atuais" title="Informação temática sobre eventos atuais"><span>Eventos atuais</span></a></li><li id="n-villagepump" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Esplanada"><span>Esplanada</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Especial:Aleat%C3%B3ria" title="Carregar página aleatória [x]" accesskey="x"><span>Página aleatória</span></a></li><li id="n-portals" class="mw-list-item"><a href="/wiki/Portal:%C3%8Dndice"><span>Portais</span></a></li><li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Informe_um_erro"><span>Informar um erro</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_especiais"><span>Páginas especiais</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Colaboração
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-welcome" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Boas-vindas"><span>Boas-vindas</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Ajuda:P%C3%A1gina_principal" title="Um local reservado para auxílio."><span>Ajuda</span></a></li><li id="n-Páginas-de-testes-públicas" class="mw-list-item"><a href="/wiki/Ajuda:P%C3%A1gina_de_testes"><span>Páginas de testes públicas</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Portal_comunit%C3%A1rio" title="Sobre o projeto"><span>Portal comunitário</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Especial:Mudan%C3%A7as_recentes" title="Uma lista de mudanças recentes nesta wiki [r]" accesskey="r"><span>Mudanças recentes</span></a></li><li id="n-maintenance" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Manuten%C3%A7%C3%A3o"><span>Manutenção</span></a></li><li id="n-createpage" class="mw-list-item"><a href="/wiki/Ajuda:Guia_de_edi%C3%A7%C3%A3o/Como_come%C3%A7ar_uma_p%C3%A1gina"><span>Criar página</span></a></li><li id="n-newpages-description" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_novas"><span>Páginas novas</span></a></li><li id="n-contact-description" class="mw-list-item"><a href="/wiki/Wikip%C3%A9dia:Contato"><span>Contato</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipédia" src="/static/images/mobile/copyright/wikipedia-wordmark-fr.svg" style="width: 7.4375em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="" src="/static/images/mobile/copyright/wikipedia-tagline-pt.svg" width="120" height="13" style="width: 7.5em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Especial:Pesquisar" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Pesquisar na Wikipédia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Busca</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Pesquisar na Wikipédia" aria-label="Pesquisar na Wikipédia" autocapitalize="sentences" title="Pesquisar na Wikipédia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Especial:Pesquisar">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Pesquisar</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Ferramentas pessoais">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Aspeto">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Aspeto"  >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance"></span>
+
+<span class="vector-dropdown-label-text">Aspeto</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=pt.wikipedia.org&amp;uselang=pt" class=""><span>Donativos</span></a>
+</li>
+<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Criar_conta&amp;returnto=Teoria+espectral+de+grafos" title="É encorajado a criar uma conta e iniciar sessão; no entanto, não é obrigatório" class=""><span>Criar uma conta</span></a>
+</li>
+<li id="pt-login-2" class="user-links-collapsible-item mw-list-item user-links-collapsible-item"><a data-mw="interface" href="/w/index.php?title=Especial:Entrar&amp;returnto=Teoria+espectral+de+grafos" title="Aconselhamos-lhe a criar uma conta na Wikipédia, embora tal não seja obrigatório. [o]" accesskey="o" class=""><span>Entrar</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Mais opções" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas pessoais"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Ferramentas pessoais</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="Menu do utilizador" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-sitesupport" class="user-links-collapsible-item mw-list-item"><a href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=pt.wikipedia.org&amp;uselang=pt"><span>Donativos</span></a></li><li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Criar_conta&amp;returnto=Teoria+espectral+de+grafos" title="É encorajado a criar uma conta e iniciar sessão; no entanto, não é obrigatório"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Criar uma conta</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Entrar&amp;returnto=Teoria+espectral+de+grafos" title="Aconselhamos-lhe a criar uma conta na Wikipédia, embora tal não seja obrigatório. [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Entrar</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Páginas para editores sem sessão iniciada <a href="/wiki/Ajuda:Introduction" aria-label="Saiba mais sobre edição"><span>saber mais</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Especial:Minhas_contribui%C3%A7%C3%B5es" title="Uma lista de edições feitas a partir deste endereço IP [y]" accesskey="y"><span>Contribuições</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Especial:Minha_discuss%C3%A3o" title="Discussão sobre edições feitas a partir deste endereço IP [n]" accesskey="n"><span>Discussão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><div id="mw-dismissablenotice-anonplace"></div><script>(function(){var node=document.getElementById("mw-dismissablenotice-anonplace");if(node){node.outerHTML="\u003Cdiv class=\"mw-dismissable-notice\"\u003E\u003Cdiv class=\"mw-dismissable-notice-close\"\u003E[\u003Ca tabindex=\"0\" role=\"button\"\u003Eocultar\u003C/a\u003E]\u003C/div\u003E\u003Cdiv class=\"mw-dismissable-notice-body\"\u003E\u003C!-- CentralNotice --\u003E\u003Cdiv id=\"localNotice\" data-nosnippet=\"\"\u003E\u003Cdiv class=\"anonnotice\" lang=\"pt\" dir=\"ltr\"\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E\u003C/div\u003E";}}());</script></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="&#039;&#039;Site&#039;&#039;">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Conteúdo" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	
+	
+>
+	<h2 class="vector-pinnable-header-label">Conteúdo</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin">ocultar</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">Início</div>
+			</a>
+		</li>
+		<li id="toc-Breve_Histórico"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Breve_Histórico">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Breve Histórico</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Breve_Histórico-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Matriz_de_Adjacência"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Matriz_de_Adjacência">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Matriz de Adjacência</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Matriz_de_Adjacência-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Alternar a subsecção Matriz de Adjacência</span>
+			</button>
+		
+		<ul id="toc-Matriz_de_Adjacência-sublist" class="vector-toc-list">
+			<li id="toc-Grafos_Isoespectrais"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Grafos_Isoespectrais">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.1</span>
+					<span>Grafos Isoespectrais</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Grafos_Isoespectrais-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Energia_do_Grafo"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Energia_do_Grafo">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">2.2</span>
+					<span>Energia do Grafo</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Energia_do_Grafo-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Matriz_Laplaciana"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Matriz_Laplaciana">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Matriz Laplaciana</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Matriz_Laplaciana-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Alternar a subsecção Matriz Laplaciana</span>
+			</button>
+		
+		<ul id="toc-Matriz_Laplaciana-sublist" class="vector-toc-list">
+			<li id="toc-Teorema_da_Matriz-Árvore"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Teorema_da_Matriz-Árvore">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.1</span>
+					<span>Teorema da Matriz-Árvore</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Teorema_da_Matriz-Árvore-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Conectividade_algébrica"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Conectividade_algébrica">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.2</span>
+					<span>Conectividade algébrica</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Conectividade_algébrica-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Energia_Laplaciana_do_Grafo"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Energia_Laplaciana_do_Grafo">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">3.3</span>
+					<span>Energia Laplaciana do Grafo</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Energia_Laplaciana_do_Grafo-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Matriz_Laplaciana_normalizada"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Matriz_Laplaciana_normalizada">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Matriz Laplaciana normalizada</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Matriz_Laplaciana_normalizada-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Referências"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Referências">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Referências</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Referências-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Ver_também"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Ver_também">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>Ver também</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Ver_também-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar">
+					<nav aria-label="Conteúdo" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Índice" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Alternar o índice"  >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Alternar o índice</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Teoria espectral de grafos</span></h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector" aria-label="Ir para um artigo noutra língua. Disponível em 13 línguas"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-13" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive"></span>
+
+<span class="vector-dropdown-label-text">13 línguas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Teoria_espectral_de_grafs" title="Teoria espectral de grafs — catalão" lang="ca" hreflang="ca" data-title="Teoria espectral de grafs" data-language-autonym="Català" data-language-local-name="catalão" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-de badge-Q70894304 mw-list-item" title=""><a href="https://de.wikipedia.org/wiki/Spektrale_Graphentheorie" title="Spektrale Graphentheorie — alemão" lang="de" hreflang="de" data-title="Spektrale Graphentheorie" data-language-autonym="Deutsch" data-language-local-name="alemão" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/Spectral_graph_theory" title="Spectral graph theory — inglês" lang="en" hreflang="en" data-title="Spectral graph theory" data-language-autonym="English" data-language-local-name="inglês" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Teor%C3%ADa_espectral_de_grafos" title="Teoría espectral de grafos — espanhol" lang="es" hreflang="es" data-title="Teoría espectral de grafos" data-language-autonym="Español" data-language-local-name="espanhol" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%D9%87_%D8%B7%DB%8C%D9%81%DB%8C_%DA%AF%D8%B1%D8%A7%D9%81%E2%80%8C%D9%87%D8%A7" title="نظریه طیفی گراف‌ها — persa" lang="fa" hreflang="fa" data-title="نظریه طیفی گراف‌ها" data-language-autonym="فارسی" data-language-local-name="persa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Th%C3%A9orie_spectrale_des_graphes" title="Théorie spectrale des graphes — francês" lang="fr" hreflang="fr" data-title="Théorie spectrale des graphes" data-language-autonym="Français" data-language-local-name="francês" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Spektr%C3%A1lis_gr%C3%A1felm%C3%A9let" title="Spektrális gráfelmélet — húngaro" lang="hu" hreflang="hu" data-title="Spektrális gráfelmélet" data-language-autonym="Magyar" data-language-local-name="húngaro" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E3%83%AB%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96" title="スペクトルグラフ理論 — japonês" lang="ja" hreflang="ja" data-title="スペクトルグラフ理論" data-language-autonym="日本語" data-language-local-name="japonês" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B5%D0%BA%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B3%D1%80%D0%B0%D1%84%D0%BE%D0%B2" title="Спектральная теория графов — russo" lang="ru" hreflang="ru" data-title="Спектральная теория графов" data-language-autonym="Русский" data-language-local-name="russo" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sk mw-list-item"><a href="https://sk.wikipedia.org/wiki/Spektr%C3%A1lna_te%C3%B3ria_grafov" title="Spektrálna teória grafov — eslovaco" lang="sk" hreflang="sk" data-title="Spektrálna teória grafov" data-language-autonym="Slovenčina" data-language-local-name="eslovaco" class="interlanguage-link-target"><span>Slovenčina</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Spektralna_teorija_grafov" title="Spektralna teorija grafov — esloveno" lang="sl" hreflang="sl" data-title="Spektralna teorija grafov" data-language-autonym="Slovenščina" data-language-local-name="esloveno" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B5%D0%BA%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%82%D0%B5%D0%BE%D1%80%D1%96%D1%8F_%D0%B3%D1%80%D0%B0%D1%84%D1%96%D0%B2" title="Спектральна теорія графів — ucraniano" lang="uk" hreflang="uk" data-title="Спектральна теорія графів" data-language-autonym="Українська" data-language-local-name="ucraniano" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E8%AD%9C%E5%9C%96%E8%AB%96" title="譜圖論 — chinês" lang="zh" hreflang="zh" data-title="譜圖論" data-language-autonym="中文" data-language-local-name="chinês" class="interlanguage-link-target"><span>中文</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3180727#sitelinks-wikipedia" title="Editar hiperligações interlínguas" class="wbc-editpage">Editar hiperligações</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Espaços nominais">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Teoria_espectral_de_grafos" title="Ver a página de conteúdo [c]" accesskey="c"><span>Artigo</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Discuss%C3%A3o:Teoria_espectral_de_grafos&amp;action=edit&amp;redlink=1" rel="discussion" class="new" title="Discussão sobre o conteúdo da página (página não existe) [t]" accesskey="t"><span>Discussão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Mudar a variante da língua"   >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">português</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Vistas">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Teoria_espectral_de_grafos"><span>Ler</span></a></li><li id="ca-ve-edit" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit" title="Editar esta página [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-edit" class="collapsible vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit" title="Editar o código-fonte desta página [e]" accesskey="e"><span>Editar código-fonte</span></a></li><li id="ca-history" class="vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=history" title="Edições anteriores desta página. [h]" accesskey="h"><span>Ver histórico</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Ferramentas de página">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Ferramentas"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Ferramentas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Ferramentas</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="Mais opções" >
+	<div class="vector-menu-heading">
+		Operações
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Teoria_espectral_de_grafos"><span>Ler</span></a></li><li id="ca-more-ve-edit" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit" title="Editar esta página [v]" accesskey="v"><span>Editar</span></a></li><li id="ca-more-edit" class="collapsible vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit" title="Editar o código-fonte desta página [e]" accesskey="e"><span>Editar código-fonte</span></a></li><li id="ca-more-history" class="vector-more-collapsible-item mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=history"><span>Ver histórico</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		Geral
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginas_afluentes/Teoria_espectral_de_grafos" title="Lista de todas as páginas que contêm hiperligações para esta [j]" accesskey="j"><span>Páginas afluentes</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Especial:Altera%C3%A7%C3%B5es_relacionadas/Teoria_espectral_de_grafos" rel="nofollow" title="Mudanças recentes nas páginas para as quais esta contém hiperligações [k]" accesskey="k"><span>Alterações relacionadas</span></a></li><li id="t-upload" class="mw-list-item"><a href="//pt.wikipedia.org/wiki/Wikipedia:Carregar_ficheiro" title="Carregar ficheiros [u]" accesskey="u"><span>Carregar ficheiro</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;oldid=66637148" title="Hiperligação permanente para esta revisão desta página"><span>Hiperligação permanente</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=info" title="Mais informações sobre esta página"><span>Informações da página</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Especial:Citar&amp;page=Teoria_espectral_de_grafos&amp;id=66637148&amp;wpFormIdentifier=titleform" title="Informação sobre como citar esta página"><span>Citar esta página</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Especial:UrlShortener&amp;url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FTeoria_espectral_de_grafos"><span>Obter URL encurtado</span></a></li><li id="t-urlshortener-qrcode" class="mw-list-item"><a href="/w/index.php?title=Especial:QrCode&amp;url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FTeoria_espectral_de_grafos"><span>Descarregar código QR</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Imprimir/exportar
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=Especial:Livro&amp;bookcmd=book_creator&amp;referer=Teoria+espectral+de+grafos"><span>Criar um livro</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Especial:DownloadAsPdf&amp;page=Teoria_espectral_de_grafos&amp;action=show-download-screen"><span>Descarregar como PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;printable=yes" title="Versão para impressão desta página [p]" accesskey="p"><span>Versão para impressão</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		Noutros projetos
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3180727" title="Hiperligação para o elemento do repositório de dados [g]" accesskey="g"><span>Elemento Wikidata</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Ferramentas de página">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Aspeto">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Aspeto</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin">mover para a barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin">ocultar</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">Origem: Wikipédia, a enciclopédia livre.</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="pt" dir="ltr"><figure typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Complete-edge-coloring.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/350px-Complete-edge-coloring.svg.png" decoding="async" width="350" height="350" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/525px-Complete-edge-coloring.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Complete-edge-coloring.svg/700px-Complete-edge-coloring.svg.png 2x" data-file-width="750" data-file-height="750" /></a><figcaption>O <a href="/wiki/Grafo_completo" title="Grafo completo">grafo completo</a> com 8 vértices possui espectro {7,-1,-1,-1,-1,-1,-1,-1} .</figcaption></figure>
+<p>Em matemática, a <b>teoria espectral de grafos</b> estuda propriedades de um <a href="/wiki/Grafos" class="mw-redirect" title="Grafos">grafo</a> por meio de suas representações matriciais e de seus respectivos <a href="/wiki/Espectro_(matem%C3%A1tica)" title="Espectro (matemática)">espectros</a>. Em geral, a Teoria Algébrica dos Grafos estuda propriedades algébricas de funções de representação e operações em grafos, conceitos e propriedades algébricas delas decorrentes. Além disso, em Teoria Espectral de Grafos, estudam-se as propriedades estruturais decorrentes das matrizes que representam grafos. Estas últimas levam às propriedades espectrais das matrizes de representação, que é o elemento central da teoria espectral de grafos.
+</p>
+<meta property="mw:PageProp/toc" />
+<div class="mw-heading mw-heading2"><h2 id="Breve_Histórico"><span id="Breve_Hist.C3.B3rico"></span>Breve Histórico</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=1" title="Editar secção: Breve Histórico" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=1" title="Editar código-fonte da secção: Breve Histórico"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Teoria Espectral de Grafos surgiu nos anos 1950 e 1960. Além das pesquisas em <a href="/wiki/Teoria_dos_Grafos" class="mw-redirect" title="Teoria dos Grafos">Teoria dos Grafos</a> sobre a relação entre as propriedades estruturais e espectrais de grafos, outra fonte importante foi a pesquisa em <a href="/wiki/Qu%C3%ADmica_qu%C3%A2ntica" title="Química quântica">química quântica</a>, mas as conexões entre essas duas linhas de trabalho foram descobertos muito mais tarde.<sup id="cite_ref-cvet2_1-0" class="reference"><a href="#cite_note-cvet2-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup> A monografia  <i>Spectra of graphs</i> de 1980,<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">&#91;</span>2<span class="cite-bracket">&#93;</span></a></sup> por Cvetkovic, Doob, e Sachs resumiu quase todas as pesquisas até o momento na área. Em 1988, ela foi atualizada pelo survey  em Teoria Espectral de Grafos <i>Recent Results in the Theory of Graph Spectra</i>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-bracket">&#91;</span>3<span class="cite-bracket">&#93;</span></a></sup> A 3 ª edição do  <i>Spectra of graphs</i> (1995) contém um resumo das contribuições mais recentes para o assunto.<sup id="cite_ref-cvet2_1-1" class="reference"><a href="#cite_note-cvet2-1"><span class="cite-bracket">&#91;</span>1<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Matriz_de_Adjacência"><span id="Matriz_de_Adjac.C3.AAncia"></span>Matriz de Adjacência</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=2" title="Editar secção: Matriz de Adjacência" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=2" title="Editar código-fonte da secção: Matriz de Adjacência"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>O estudo da Teoria Espectral dos Grafos basicamente relaciona propriedades algébricas do espectro de certas matrizes associadas
+a um grafo e as propriedades estruturais desse grafo. A associação mais comum é
+feita pela <a href="/wiki/Matriz_de_adjac%C3%AAncia" title="Matriz de adjacência">matriz de adjacência</a> e o espectro dessa matriz é o espectro do grafo.
+Dado um grafo G=(V,E) com <b>n</b> vértices, a <a href="/wiki/Matriz_de_adjac%C3%AAncia" title="Matriz de adjacência">matriz de adjacência</a> de G é a matriz de ordem <b>n</b> dada por  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle A(G)=[a_{ij}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A(G)=[a_{ij}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5a36c13da43765bc90dd00631e66d8d1cf4b752e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:12.478ex; height:3.009ex;" alt="{\displaystyle A(G)=[a_{ij}]}" /></span>,  onde  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{ij}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{ij}=1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/deac1afb1603aaa3ee91e770c71b8cd243197fd7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:6.968ex; height:2.843ex;" alt="{\displaystyle a_{ij}=1}" /></span> se <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle v_{i}v_{j}\in E}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>E</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}v_{j}\in E}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0cdf49ca13950a02ec62a1e026e02a3c90290fe" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:8.581ex; height:2.843ex;" alt="{\displaystyle v_{i}v_{j}\in E}" /></span> e <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a_{ij}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{ij}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a565e93211d1ad5c06a571ff8952ab3dfcff3638" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:6.968ex; height:2.843ex;" alt="{\displaystyle a_{ij}=0}" /></span> nas entradas restantes. Quando conveniente, utilizaremos apenas A para denotar a matriz de adjacência.
+Eis um exemplo:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Grafo rotulado
+</th>
+<th>Matriz de Adjacência
+</th></tr>
+<tr>
+<td><figure class="mw-halign-right" typeof="mw:File"><a href="/wiki/Ficheiro:6n-graph2.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/6n-graph2.svg/250px-6n-graph2.svg.png" decoding="async" width="200" height="219" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/6n-graph2.svg/330px-6n-graph2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/6n-graph2.svg/400px-6n-graph2.svg.png 2x" data-file-width="375" data-file-height="410" /></a><figcaption></figcaption></figure>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{bmatrix}1&amp;1&amp;0&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0&amp;1&amp;1\\1&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1&amp;0&amp;0\\\end{bmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{bmatrix}1&amp;1&amp;0&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0&amp;1&amp;1\\1&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1&amp;0&amp;0\\\end{bmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8404a68575d7d4e9b865a98d1a766721962ea410" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -9.005ex; width:22.44ex; height:19.176ex;" alt="{\displaystyle {\begin{bmatrix}1&amp;1&amp;0&amp;0&amp;1&amp;0\\1&amp;0&amp;1&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0&amp;1&amp;1\\1&amp;1&amp;0&amp;1&amp;0&amp;0\\0&amp;0&amp;0&amp;1&amp;0&amp;0\\\end{bmatrix}}}" /></span>
+</td></tr></tbody></table>
+<p>O espectro de G
+é o conjunto dos autovalores, geralmente apresentados em ordem decrescente, não
+necessariamente no sentido estrito, associados às suas respectivas multiplicidades
+algébricas.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Grafos_Isoespectrais">Grafos Isoespectrais</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=3" title="Editar secção: Grafos Isoespectrais" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=3" title="Editar código-fonte da secção: Grafos Isoespectrais"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Uma das questões em aberto da Teoria de Grafos se refere à caracterização de
+uma lista completa de parâmetros capaz de decidir se dois grafos são <a href="/wiki/Isomorfismo_de_grafos" title="Isomorfismo de grafos">isomorfos</a>.
+Tais parâmetros são conhecidos como invariantes do grafo.
+Dois grafos são chamados de <a href="/w/index.php?title=Isoespectral&amp;action=edit&amp;redlink=1" class="new" title="Isoespectral (página não existe)">isoespectrais</a> ou cospectrais se a <a href="/wiki/Matriz_de_adjac%C3%AAncia" title="Matriz de adjacência">matriz de adjacência</a> de cada grafo tem os mesmos autovalores.
+</p><p>Grafos isospectrais não precisam ser <a href="/wiki/Isomorfismo_de_grafos" title="Isomorfismo de grafos">isomorfos</a>, mas os grafos isomorfos são isoespectrais. O menor par de grafos não isomorfos  e cospectrais não dirigidos são {<i>K</i><sub>1,4</sub>, <i>C</i><sub>4</sub> U <i>K</i><sub>1</sub>}, como relatado por Collatz e Sinogowitz<sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span class="cite-bracket">&#91;</span>4<span class="cite-bracket">&#93;</span></a></sup><sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span class="cite-bracket">&#91;</span>5<span class="cite-bracket">&#93;</span></a></sup> em 1957.
+</p><p>Quase todas as <a href="/wiki/%C3%81rvore_(teoria_dos_grafos)" class="mw-redirect" title="Árvore (teoria dos grafos)">árvores</a> são coespectrais, ou seja, a proporção de árvores cospectrais em <b>n</b> vértices tende a 1 quando <b>n</b> cresce.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6"><span class="cite-bracket">&#91;</span>6<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Energia_do_Grafo">Energia do Grafo</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=4" title="Editar secção: Energia do Grafo" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=4" title="Editar código-fonte da secção: Energia do Grafo"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Se <i>A</i> é a  <a href="/wiki/Matriz_de_adjac%C3%AAncia" title="Matriz de adjacência">matriz de adjacência</a> do grafo <i>G</i>, a <a href="/wiki/Energia_do_grafo" title="Energia do grafo">energia do grafo</a> é definida como:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E(G)=\sum _{i=1}^{n}|\lambda _{i}|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <msub>
+          <mi>&#x3bb;<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E(G)=\sum _{i=1}^{n}|\lambda _{i}|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46677f4b9669ace7f5520e63b84b7990d2d59589" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.005ex; width:15.701ex; height:6.843ex;" alt="{\displaystyle E(G)=\sum _{i=1}^{n}|\lambda _{i}|}" /></span></dd></dl>
+<p>onde <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda _{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x3bb;<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72fde940918edf84caf3d406cc7d31949166820f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.155ex; height:2.509ex;" alt="{\displaystyle \lambda _{i}}" /></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle i=1,2,\ldots ,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i=1,2,\ldots ,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4139aedce69fd9e24a74aefdf330009777ee2fb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:13.833ex; height:2.509ex;" alt="{\displaystyle i=1,2,\ldots ,n}" /></span>  são os autovalores de <i>A</i>. A energia de um grafo foi definida pela primeira vez por <a href="/w/index.php?title=Ivan_Gutman&amp;action=edit&amp;redlink=1" class="new" title="Ivan Gutman (página não existe)">Ivan Gutman</a> em 1978.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span class="cite-bracket">&#91;</span>7<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Matriz_Laplaciana">Matriz Laplaciana</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=5" title="Editar secção: Matriz Laplaciana" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=5" title="Editar código-fonte da secção: Matriz Laplaciana"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Dado um grafo G=(V,E) com <b>n</b> vértices, a <a href="/wiki/Matriz_Laplaciana" title="Matriz Laplaciana">matriz Laplaciana</a> de G é a matriz de ordem <b>n</b> dada por  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L(G)=[l_{ij}]}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mo stretchy="false">[</mo>
+        <msub>
+          <mi>l</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">]</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L(G)=[l_{ij}]}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e3333587d7f45c633d74515e533df5dacb200f77" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:11.781ex; height:3.009ex;" alt="{\displaystyle L(G)=[l_{ij}]}" /></span>,  onde  <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle l_{ij}=-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>l</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l_{ij}=-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5588dcc21a3aa33cf8b2538b53f7e4ce77dfef43" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:8.239ex; height:2.843ex;" alt="{\displaystyle l_{ij}=-1}" /></span> se <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle v_{i}v_{j}\in E}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>&#x2208;<!-- ∈ --></mo>
+        <mi>E</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{i}v_{j}\in E}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0cdf49ca13950a02ec62a1e026e02a3c90290fe" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:8.581ex; height:2.843ex;" alt="{\displaystyle v_{i}v_{j}\in E}" /></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle l_{ii}=d(v_{i})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>l</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>d</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l_{ii}=d(v_{i})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5b143907ca3f87e8e97c72c857a5e7d830ad3753" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.111ex; height:2.843ex;" alt="{\displaystyle l_{ii}=d(v_{i})}" /></span> e <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle l_{ij}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>l</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle l_{ij}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/76f29126443d4a488b4422d071ec734f89a0ba68" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:6.431ex; height:2.843ex;" alt="{\displaystyle l_{ij}=0}" /></span> nas entradas restantes. Quando conveniente, utilizaremos apenas L para denotar a matriz laplaciana.
+</p><p>A matriz Laplaciana e a matriz de adjacência se relacionam da forma
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L=D-A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+        <mo>=</mo>
+        <mi>D</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L=D-A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/043a9a4a219bbee58c30add2d40b74054a3f15f1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:11.189ex; height:2.343ex;" alt="{\displaystyle L=D-A}" /></span></dd></dl>
+<p>onde <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="{\displaystyle D}" /></span> é a <a href="/wiki/Matriz_diagonal" title="Matriz diagonal">matriz diagonal</a> com o grau dos vértices.
+</p><p>Eis um exemplo:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Grafo rotulado
+</th>
+<th>Matriz laplaciana
+</th></tr>
+<tr>
+<td><span typeof="mw:File"><a href="/wiki/Ficheiro:6n-graf.svg" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/175px-6n-graf.svg.png" decoding="async" width="175" height="116" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/263px-6n-graf.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/350px-6n-graf.svg.png 2x" data-file-width="333" data-file-height="220" /></a></span>
+</td>
+<td><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\begin{bmatrix}2&amp;-1&amp;0&amp;0&amp;-1&amp;0\\-1&amp;3&amp;-1&amp;0&amp;-1&amp;0\\0&amp;-1&amp;2&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;3&amp;-1&amp;-1\\-1&amp;-1&amp;0&amp;-1&amp;3&amp;0\\0&amp;0&amp;0&amp;-1&amp;0&amp;1\\\end{bmatrix}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>3</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>2</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>3</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>3</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{bmatrix}2&amp;-1&amp;0&amp;0&amp;-1&amp;0\\-1&amp;3&amp;-1&amp;0&amp;-1&amp;0\\0&amp;-1&amp;2&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;3&amp;-1&amp;-1\\-1&amp;-1&amp;0&amp;-1&amp;3&amp;0\\0&amp;0&amp;0&amp;-1&amp;0&amp;1\\\end{bmatrix}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8526ebc195a7316a3eaf7299924216e64e399498" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -9.005ex; width:33.289ex; height:19.176ex;" alt="{\displaystyle {\begin{bmatrix}2&amp;-1&amp;0&amp;0&amp;-1&amp;0\\-1&amp;3&amp;-1&amp;0&amp;-1&amp;0\\0&amp;-1&amp;2&amp;-1&amp;0&amp;0\\0&amp;0&amp;-1&amp;3&amp;-1&amp;-1\\-1&amp;-1&amp;0&amp;-1&amp;3&amp;0\\0&amp;0&amp;0&amp;-1&amp;0&amp;1\\\end{bmatrix}}}" /></span>
+</td></tr></tbody></table>
+<p>Uma representação de um grafo frequente em teoria espectral de grafos é dada pela sua <a href="/wiki/Matriz_Laplaciana" title="Matriz Laplaciana">matriz Laplaciana</a>. Essa matriz e, em especial, o seu segundo menor autovalor, chamado de <a href="/wiki/Conectividade_alg%C3%A9brica" title="Conectividade algébrica">conectividade algébrica</a>, desempenham um papel relevante em diversas aplicações. Em,<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span class="cite-bracket">&#91;</span>8<span class="cite-bracket">&#93;</span></a></sup> alguns dos muitos resultados
+conhecidos sobre essa matriz são exibidos.
+</p><p>A seguir, enunciamos um resultado bem conhecido sobre o primeiro e o segundo menor autovalor <a href="/wiki/Laplaciano" title="Laplaciano">laplaciano</a> de um grafo G.
+</p>
+<dl><dt>Teorema</dt></dl>
+<p><i>Seja G um grafo com <b>n</b> vértices, e L sua matriz laplaciana. Sejam <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {l_{1}}\leq {l_{2}}\leq {...}\leq {l_{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>l</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>l</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mrow>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>l</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msub>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {l_{1}}\leq {l_{2}}\leq {...}\leq {l_{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a393ac8aa4681d8e9b3401dbb95dc233480edb20" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:17.417ex; height:2.509ex;" alt="{\displaystyle {l_{1}}\leq {l_{2}}\leq {...}\leq {l_{n}}}" /></span> os autovalores de L. Então:</i>
+</p><p>(i) <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {l_{1}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>l</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>1</mn>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {l_{1}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39a5357976f292a275120664ec0c04897c0b514a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.008ex; height:2.509ex;" alt="{\displaystyle {l_{1}}=0}" /></span> e o vetor com todas entradas iguais a 1 é autovetor associado
+</p><p>(ii) G é conexo se, e somente se, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {l_{2}}&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>l</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {l_{2}}&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3948ec277411e223ab868ab7dbb6f65ed39fbfad" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.008ex; height:2.509ex;" alt="{\displaystyle {l_{2}}&gt;0}" /></span>.<i></i>
+</p><p>Portanto todos os autovalores de L são maiores ou iguais a zero. Para um grafo desconexo, o número de autovalores iguais a zero é precisamente o número de componentes conexas do grafo. Assim, a multiplicidade do autovalor zero é o número de componentes conexas de G.
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Teorema_da_Matriz-Árvore"><span id="Teorema_da_Matriz-.C3.81rvore"></span>Teorema da Matriz-Árvore</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=6" title="Editar secção: Teorema da Matriz-Árvore" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=6" title="Editar código-fonte da secção: Teorema da Matriz-Árvore"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Outro resultado importante envolvendo a matriz Laplaciana é o teorema da matriz-árvore. Uma árvore geradora de um grafo G é um subgrafo que tem os mesmos vértices de G e é uma árvore. A determinação do número de árvores geradoras de um grafo é um dos problemas mais antigos e famosos da teoria de grafos.
+</p><p>Em 1847, Kirchhoff estudando circuitos elétricos, provou o resultado que ficou conhecido como teorema da matriz-árvore, enunciado a seguir.
+</p><p>Claramente, grafos desconexos não possuem árvores geradoras. Por outro lado, todo grafo conexo tem pelo menos uma árvore geradora (se o grafo não é uma árvore, podemos remover uma aresta de cada ciclo, sucessivamente, até não haver mais ciclos. O subgrafo obtido será uma árvore geradora do grafo inicial). O teorema da matriz-árvore, na sua versão original, afirma que o número de árvores geradoras de um grafo é dado por qualquer cofator de sua matriz laplaciana. Mais precisamente:
+</p>
+<dl><dt>Teorema</dt></dl>
+<p><i>adj(L) = t(G) · J, onde t(G) é o número de árvores geradoras de G, e J é a matriz com todas entradas iguais a 1.</i>
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Conectividade_algébrica"><span id="Conectividade_alg.C3.A9brica"></span>Conectividade algébrica</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=7" title="Editar secção: Conectividade algébrica" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=7" title="Editar código-fonte da secção: Conectividade algébrica"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure class="mw-default-size" typeof="mw:File/Thumb"><a href="/wiki/Ficheiro:Truncatedicosahedron.gif" class="mw-file-description"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Truncatedicosahedron.gif/220px-Truncatedicosahedron.gif" decoding="async" width="220" height="220" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/3/31/Truncatedicosahedron.gif 1.5x" data-file-width="256" data-file-height="256" /></a><figcaption>O <a href="/wiki/Icosaedro_truncado" title="Icosaedro truncado">icosaedro truncado</a>, visto como um grafo, possui conectividade de vértices 3, porém conectividade algébrica de 0,243.</figcaption></figure>
+<p>Fiedler mostrou<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span class="cite-bracket">&#91;</span>9<span class="cite-bracket">&#93;</span></a></sup> que um grafo é conexo se, e somente se, o seu segundo menor autovalor Laplaciano é positivo. Esse autovalor é denominado <a href="/wiki/Conectividade_alg%C3%A9brica" title="Conectividade algébrica">conectividade algébrica</a> e desempenha um papel fundamental em teoria espectral de grafos. Denotamos a conectividade algébrica por a(G).
+</p><p>As conectividades algébrica, de vértices e de arestas, respectivamente a(G), &#954;(G) e &#955;(G), estão relacionadas de acordo com o resultado abaixo, provado por Fiedler.
+</p>
+<dl><dt>Teorema</dt></dl>
+<p><i>Se G não é um grafo completo então a(G) ≤ &#954;(G) ≤ &#955;(G).</i>
+</p><p>Para o grafo completo <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {K_{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>K</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msub>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {K_{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d0d585da06686cc1538790f6ab50081ef3e99613" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:3.192ex; height:2.509ex;" alt="{\displaystyle {K_{n}}}" /></span>, Fiedler demonstrou que <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle a({K_{n}})=n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>K</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a({K_{n}})=n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ebabaa44752c1231e4165643068ad0041afe8ab9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.724ex; height:2.843ex;" alt="{\displaystyle a({K_{n}})=n}" /></span>.
+</p><p><br />
+</p>
+<div class="mw-heading mw-heading3"><h3 id="Energia_Laplaciana_do_Grafo">Energia Laplaciana do Grafo</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=8" title="Editar secção: Energia Laplaciana do Grafo" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=8" title="Editar código-fonte da secção: Energia Laplaciana do Grafo"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>Da mesma maneira que para a matriz de adjacência, a energia pode ser definida utilizando os autovalores da matriz Laplaciana. Esse conceito  também foi definido por <a href="/w/index.php?title=Ivan_Gutman&amp;action=edit&amp;redlink=1" class="new" title="Ivan Gutman (página não existe)">Ivan Gutman</a> em 2006 no artigo.<sup id="cite_ref-10" class="reference"><a href="#cite_note-10"><span class="cite-bracket">&#91;</span>10<span class="cite-bracket">&#93;</span></a></sup>
+Considerando <i>L</i> a  <a href="/wiki/Matriz_Laplaciana" title="Matriz Laplaciana">matriz Laplaciana</a> do grafo <i>G</i> com <i>n</i> vértices e <i>m</i> arestas, a <a href="/w/index.php?title=Energia_Laplaciana_do_grafo&amp;action=edit&amp;redlink=1" class="new" title="Energia Laplaciana do grafo (página não existe)">energia Laplaciana do grafo</a> é definida como:
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle E(G)=\sum _{i=1}^{n}\left|\lambda _{i}-{\frac {2m}{n}}\right|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>E</mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munderover>
+          <mo>&#x2211;<!-- ∑ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </munderover>
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <msub>
+              <mi>&#x3bb;<!-- λ --></mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>m</mi>
+                </mrow>
+                <mi>n</mi>
+              </mfrac>
+            </mrow>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle E(G)=\sum _{i=1}^{n}\left|\lambda _{i}-{\frac {2m}{n}}\right|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/acf1135e2a63bc72b49766363f5f349f87cadc20" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.005ex; width:22.58ex; height:6.843ex;" alt="{\displaystyle E(G)=\sum _{i=1}^{n}\left|\lambda _{i}-{\frac {2m}{n}}\right|}" /></span></dd></dl>
+<p>onde <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \lambda _{i}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x3bb;<!-- λ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda _{i}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/72fde940918edf84caf3d406cc7d31949166820f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.155ex; height:2.509ex;" alt="{\displaystyle \lambda _{i}}" /></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle i=1,2,\ldots ,n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <mo>&#x2026;<!-- … --></mo>
+        <mo>,</mo>
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i=1,2,\ldots ,n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4139aedce69fd9e24a74aefdf330009777ee2fb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:13.833ex; height:2.509ex;" alt="{\displaystyle i=1,2,\ldots ,n}" /></span>  são os autovalores de <i>L</i>.
+</p>
+<div class="mw-heading mw-heading2"><h2 id="Matriz_Laplaciana_normalizada">Matriz Laplaciana normalizada</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=9" title="Editar secção: Matriz Laplaciana normalizada" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=9" title="Editar código-fonte da secção: Matriz Laplaciana normalizada"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p>A matriz Laplaciana normalizada pode ser definida por <sup id="cite_ref-mathworld_11-0" class="reference"><a href="#cite_note-mathworld-11"><span class="cite-bracket">&#91;</span>11<span class="cite-bracket">&#93;</span></a></sup>
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ell _{i,j}:={\begin{cases}1&amp;{\mbox{if}}\ i=j\ {\mbox{and}}\ \deg(v_{i})\neq 0\\-{\frac {1}{\sqrt {\deg(v_{i})\deg(v_{j})}}}&amp;{\mbox{if}}\ i\neq j\ {\mbox{and}}\ v_{i}{\mbox{ is adjacent to }}v_{j}\\0&amp;{\mbox{otherwise}}.\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x2113;<!-- ℓ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>,</mo>
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>:=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mtext>&#xa0;</mtext>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mi>j</mi>
+                  <mtext>&#xa0;</mtext>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>and</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mtext>&#xa0;</mtext>
+                  <mi>deg</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mn>1</mn>
+                      <msqrt>
+                        <mi>deg</mi>
+                        <mo>&#x2061;<!-- ⁡ --></mo>
+                        <mo stretchy="false">(</mo>
+                        <msub>
+                          <mi>v</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>i</mi>
+                          </mrow>
+                        </msub>
+                        <mo stretchy="false">)</mo>
+                        <mi>deg</mi>
+                        <mo>&#x2061;<!-- ⁡ --></mo>
+                        <mo stretchy="false">(</mo>
+                        <msub>
+                          <mi>v</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>j</mi>
+                          </mrow>
+                        </msub>
+                        <mo stretchy="false">)</mo>
+                      </msqrt>
+                    </mfrac>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>if</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mtext>&#xa0;</mtext>
+                  <mi>i</mi>
+                  <mo>&#x2260;<!-- ≠ --></mo>
+                  <mi>j</mi>
+                  <mtext>&#xa0;</mtext>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>and</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mtext>&#xa0;</mtext>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                    </mrow>
+                  </msub>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>&#xa0;is adjacent to&#xa0;</mtext>
+                    </mstyle>
+                  </mrow>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>j</mi>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+                <mtd>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mtext>otherwise</mtext>
+                    </mstyle>
+                  </mrow>
+                  <mo>.</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell _{i,j}:={\begin{cases}1&amp;{\mbox{if}}\ i=j\ {\mbox{and}}\ \deg(v_{i})\neq 0\\-{\frac {1}{\sqrt {\deg(v_{i})\deg(v_{j})}}}&amp;{\mbox{if}}\ i\neq j\ {\mbox{and}}\ v_{i}{\mbox{ is adjacent to }}v_{j}\\0&amp;{\mbox{otherwise}}.\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41d9157ad31e9b1700dc80b35a36a362a48adb78" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -5.005ex; width:57.104ex; height:11.176ex;" alt="{\displaystyle \ell _{i,j}:={\begin{cases}1&amp;{\mbox{if}}\ i=j\ {\mbox{and}}\ \deg(v_{i})\neq 0\\-{\frac {1}{\sqrt {\deg(v_{i})\deg(v_{j})}}}&amp;{\mbox{if}}\ i\neq j\ {\mbox{and}}\ v_{i}{\mbox{ is adjacent to }}v_{j}\\0&amp;{\mbox{otherwise}}.\end{cases}}}" /></span></dd></dl>
+<p>A matriz Laplaciana normalizada <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ell }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x2113;<!-- ℓ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f066e981e530bacc07efc6a10fa82deee985929e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.97ex; height:2.176ex;" alt="{\displaystyle \ell }" /></span> e a matriz Laplaciana <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle L}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>L</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle L}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/103168b86f781fe6e9a4a87b8ea1cebe0ad4ede8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.583ex; height:2.176ex;" alt="{\displaystyle L}" /></span> se relacionam da seguinte forma
+</p>
+<dl><dd><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \ell =D^{1/2}LD^{1/2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x2113;<!-- ℓ --></mi>
+        <mo>=</mo>
+        <msup>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mi>L</mi>
+        <msup>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \ell =D^{1/2}LD^{1/2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ccab31be0d76ffa9356e8dffcfe16729c4c6514" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:14.896ex; height:2.843ex;" alt="{\displaystyle \ell =D^{1/2}LD^{1/2}}" /></span></dd></dl>
+<p>onde <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="{\displaystyle D}" /></span> diagonal com o grau dos vértices.
+</p>
+<h2 id="Referências" style="cursor: help;" title="Esta seção foi configurada para não ser editável diretamente. Edite a página toda ou a seção anterior em vez disso."><span id="Refer.C3.AAncias"></span>Referências</h2>
+<div class="reflist" style="list-style-type: decimal;"><div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-cvet2-1"><span class="mw-cite-backlink">↑ <sup><i><b><a href="#cite_ref-cvet2_1-0">a</a></b></i></sup> <sup><i><b><a href="#cite_ref-cvet2_1-1">b</a></b></i></sup></span> <span class="reference-text"><i>Eigenspaces of Graphs</i>, by <a href="/w/index.php?title=Drago%C5%A1_Cvetkovi%C4%87&amp;action=edit&amp;redlink=1" class="new" title="Dragoš Cvetković (página não existe)">Dragoš Cvetković</a>, Peter Rowlinson, Slobodan Simić (1997) <a href="/wiki/Especial:Fontes_de_livros/0521573521" class="internal mw-magiclink-isbn">ISBN 0-521-57352-1</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text">Dragoš M. Cvetković, Michael Doob, <a href="/wiki/Horst_Sachs" title="Horst Sachs">Horst Sachs</a>, <i>Spectra of Graphs</i> (1980)</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><cite class="citation book">Cvetković, Dragoš M.; Doob, Michael; Sachs, Horst; Torgasev, A. (1988). <a rel="nofollow" class="external text" href="http://www.sciencedirect.com/science/bookseries/01675060/36"><i>Recent Results in the Theory of Graph Spectra</i></a>. Col: Annals of Discrete mathematics,&#160;36. [S.l.: s.n.] <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Especial:Fontes_de_livros/0-444-70361-6" title="Especial:Fontes de livros/0-444-70361-6">0-444-70361-6</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3ATeoria+espectral+de+grafos&amp;rft.au=Doob%2C+Michael&amp;rft.au=Sachs%2C+Horst&amp;rft.au=Torgasev%2C+A.&amp;rft.aufirst=Drago%C5%A1+M.&amp;rft.aulast=Cvetkovi%C4%87&amp;rft.btitle=Recent+Results+in+the+Theory+of+Graph+Spectra&amp;rft.date=1988&amp;rft.genre=book&amp;rft.isbn=0-444-70361-6&amp;rft.series=Annals+of+Discrete+mathematics%2C+36&amp;rft_id=http%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Fbookseries%2F01675060%2F36&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text">Collatz, L. and Sinogowitz, U. "Spektren endlicher Grafen." Abh. Math. Sem. Univ. Hamburg 21, 63&#8211;77, 1957.</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><span class="citation mathworld" id="Reference-Mathworld-Cospectral_Graphs"><cite id="CITEREFWeisstein" class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/CospectralGraphs.html">«Cospectral Graphs»</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i> (em inglês)</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3ATeoria+espectral+de+grafos&amp;rft.atitle=Cospectral+Graphs&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft_id=https%3A%2F%2Fmathworld.wolfram.com%2FCospectralGraphs.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><a href="/w/index.php?title=A._J._Schwenk&amp;action=edit&amp;redlink=1" class="new" title="A. J. Schwenk (página não existe)">Schwenk, A. J.</a> "Almost All Trees are Cospectral"  In:
+<i>New Directions in the Theory of Graphs</i> (F. Harary, Ed.), Academic Press, New York, 1973, pp. 275&#x2013;307.</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><a href="/w/index.php?title=Richard_A._Brualdi&amp;action=edit&amp;redlink=1" class="new" title="Richard A. Brualdi (página não existe)">Richard A. Brualdi</a>, <a rel="nofollow" class="external text" href="http://www.public.iastate.edu/~lhogben/energyB.pdf">Energy of a Graph</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20111203142344/http://www.public.iastate.edu/~lhogben/energyB.pdf">Arquivado em</a> 3 de dezembro de  2011, no <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>., AIM Workshop, 2006.</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><a href="#cite_ref-8">↑</a></span> <span class="reference-text"><i>Laplacian Matrices of Graphs: A Survey</i>, by <a href="/w/index.php?title=R._Merris&amp;action=edit&amp;redlink=1" class="new" title="R. Merris (página não existe)">R. Merris</a>, Linear Algebra and its Applications, Vol. 197 (1994), 198:143-176.</span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text"><i>Algebraic connectivity of graphs</i>, by <a href="/wiki/Miroslav_Fiedler" title="Miroslav Fiedler">Miroslav Fiedler</a>, Czechoslo-
+vak Mathematical Journal, Vol. 23 (1973), 298-305.</span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text"><a href="/w/index.php?title=Ivan_Gutman&amp;action=edit&amp;redlink=1" class="new" title="Ivan Gutman (página não existe)">Ivan Gutman</a>, <a rel="nofollow" class="external text" href="http://www.aimath.org/WWN/matrixspectrum/gutman2006.pdf">Laplacian Energy of a Graph</a>, Linear Algebra and its Applications, 414, (2006), 29–37.</span>
+</li>
+<li id="cite_note-mathworld-11"><span class="mw-cite-backlink"><a href="#cite_ref-mathworld_11-0">↑</a></span> <span class="reference-text"><span class="citation mathworld" id="Reference-Mathworld-Laplacian_Matrix"><cite id="CITEREFWeisstein" class="citation web"><a href="/wiki/Eric_W._Weisstein" title="Eric W. Weisstein">Weisstein, Eric W.</a> <a rel="nofollow" class="external text" href="https://mathworld.wolfram.com/LaplacianMatrix.html">«Laplacian Matrix»</a>. <i><a href="/wiki/MathWorld" title="MathWorld">MathWorld</a></i> (em inglês)</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fpt.wikipedia.org%3ATeoria+espectral+de+grafos&amp;rft.atitle=Laplacian+Matrix&amp;rft.au=Weisstein%2C+Eric+W.&amp;rft.genre=unknown&amp;rft.jtitle=MathWorld&amp;rft_id=https%3A%2F%2Fmathworld.wolfram.com%2FLaplacianMatrix.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></span>
+</li>
+</ol></div></div>
+<div class="mw-heading mw-heading2"><h2 id="Ver_também"><span id="Ver_tamb.C3.A9m"></span>Ver também</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;veaction=edit&amp;section=10" title="Editar secção: Ver também" class="mw-editsection-visualeditor"><span>editar</span></a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit&amp;section=10" title="Editar código-fonte da secção: Ver também"><span>editar código-fonte</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul><li><a href="/wiki/Matriz_de_adjac%C3%AAncia" title="Matriz de adjacência">Matriz de adjacência</a></li>
+<li><a href="/wiki/Conectividade_alg%C3%A9brica" title="Conectividade algébrica">Conectividade algébrica</a></li>
+<li><a href="/wiki/Energia_do_grafo" title="Energia do grafo">Energia do grafo</a></li></ul>
+<ul class="noprint navigation-box" style="border-top: solid silver 1px; border-right: solid silver 1px; border-bottom:1px solid silver; border-left: solid silver 1px; padding:3px; background-color: #F9F9F9; text-align: center; margin-top:10px; margin-left: 0; clear: both;"><li style="display: inline;"><span style="white-space: nowrap; margin: auto 1.5em"><span style="margin-right: 0.5em"><span typeof="mw:File"><a href="/wiki/Ficheiro:Nuvola_apps_edu_mathematics-p.svg" title="Portal da matemática"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/25px-Nuvola_apps_edu_mathematics-p.svg.png" decoding="async" width="25" height="25" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/38px-Nuvola_apps_edu_mathematics-p.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nuvola_apps_edu_mathematics-p.svg/50px-Nuvola_apps_edu_mathematics-p.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span></span> <span style="font-weight:bold"><a href="/wiki/Portal:Matem%C3%A1tica" title="Portal:Matemática">Portal da matemática</a></span></span></li>         </ul>
+<p><br />
+</p>
+<table class="noprint" style="border-top:none; border-bottom:none; background:transparent; color: inherit"><tbody><tr>
+ <td style="text-align: center;"><span typeof="mw:File"><a href="/wiki/Ficheiro:E-to-the-i-pi.svg" class="mw-file-description"><img alt="Ícone de esboço" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/35/E-to-the-i-pi.svg/34px-E-to-the-i-pi.svg.png" decoding="async" width="34" height="30" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/35/E-to-the-i-pi.svg/51px-E-to-the-i-pi.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/35/E-to-the-i-pi.svg/68px-E-to-the-i-pi.svg.png 2x" data-file-width="512" data-file-height="453" /></a></span></td>
+<td><i>Este artigo  sobre <a href="/wiki/Matem%C3%A1tica" title="Matemática">matemática</a> é um <a href="/wiki/Wikip%C3%A9dia:Esbo%C3%A7o" title="Wikipédia:Esboço">esboço</a>.  Você pode ajudar a Wikipédia <b><span class="plainlinks" style="white-space:nowrap"><a class="external text" href="https://pt.wikipedia.org/w/index.php?title=Teoria_espectral_de_grafos&amp;action=edit">expandindo-o</a></span></b>.</i><span style="white-space:nowrap;"><style data-mw-deduplicate="TemplateStyles:r69811335">.mw-parser-output .hlist dl,.mw-parser-output .hlist ol,.mw-parser-output .hlist ul{margin:0;padding:0}.mw-parser-output .hlist dd,.mw-parser-output .hlist dt,.mw-parser-output .hlist li{margin:0;display:inline}.mw-parser-output .hlist.inline,.mw-parser-output .hlist.inline dl,.mw-parser-output .hlist.inline ol,.mw-parser-output .hlist.inline ul,.mw-parser-output .hlist dl dl,.mw-parser-output .hlist dl ol,.mw-parser-output .hlist dl ul,.mw-parser-output .hlist ol dl,.mw-parser-output .hlist ol ol,.mw-parser-output .hlist ol ul,.mw-parser-output .hlist ul dl,.mw-parser-output .hlist ul ol,.mw-parser-output .hlist ul ul{display:inline}.mw-parser-output .hlist .mw-empty-li{display:none}.mw-parser-output .hlist dt::after{content:": "}.mw-parser-output .hlist dd::after,.mw-parser-output .hlist li::after{content:" · ";font-weight:bold}.mw-parser-output .hlist dd:last-child::after,.mw-parser-output .hlist dt:last-child::after,.mw-parser-output .hlist li:last-child::after{content:none}.mw-parser-output .hlist dd dd:first-child::before,.mw-parser-output .hlist dd dt:first-child::before,.mw-parser-output .hlist dd li:first-child::before,.mw-parser-output .hlist dt dd:first-child::before,.mw-parser-output .hlist dt dt:first-child::before,.mw-parser-output .hlist dt li:first-child::before,.mw-parser-output .hlist li dd:first-child::before,.mw-parser-output .hlist li dt:first-child::before,.mw-parser-output .hlist li li:first-child::before{content:" (";font-weight:normal}.mw-parser-output .hlist dd dd:last-child::after,.mw-parser-output .hlist dd dt:last-child::after,.mw-parser-output .hlist dd li:last-child::after,.mw-parser-output .hlist dt dd:last-child::after,.mw-parser-output .hlist dt dt:last-child::after,.mw-parser-output .hlist dt li:last-child::after,.mw-parser-output .hlist li dd:last-child::after,.mw-parser-output .hlist li dt:last-child::after,.mw-parser-output .hlist li li:last-child::after{content:")";font-weight:normal}.mw-parser-output .hlist ol{counter-reset:listitem}.mw-parser-output .hlist ol>li{counter-increment:listitem}.mw-parser-output .hlist ol>li::before{content:" "counter(listitem)"\a0 "}.mw-parser-output .hlist dd ol>li:first-child::before,.mw-parser-output .hlist dt ol>li:first-child::before,.mw-parser-output .hlist li ol>li:first-child::before{content:" ("counter(listitem)"\a0 "}</style><style data-mw-deduplicate="TemplateStyles:r69825269">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}</style><div class="navbar plainlinks hlist navbar-mini" style="position:absolute; right:15px; font-size:smaller; display:none;"><ul><li class="nv-ver"><a href="/wiki/Predefini%C3%A7%C3%A3o:Esbo%C3%A7o-matem%C3%A1tica" title="Predefinição:Esboço-matemática"><abbr title="Ver esta predefinição">v</abbr></a></li><li class="nv-discutir"><a href="/wiki/Predefini%C3%A7%C3%A3o_Discuss%C3%A3o:Esbo%C3%A7o-matem%C3%A1tica" title="Predefinição Discussão:Esboço-matemática"><abbr title="Discutir esta predefinição">d</abbr></a></li><li class="nv-editar"><a href="/wiki/Especial:EditPage/Predefini%C3%A7%C3%A3o:Esbo%C3%A7o-matem%C3%A1tica" title="Especial:EditPage/Predefinição:Esboço-matemática"><abbr title="Editar esta predefinição">e</abbr></a></li></ul></div></span></td>
+</tr></tbody></table>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐6df8dbf59d‐xbsmw
+Cached time: 20250330032353
+Cache expiry: 2592000
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc]
+CPU time usage: 0.238 seconds
+Real time usage: 0.469 seconds
+Preprocessor visited node count: 1626/1000000
+Post‐expand include size: 15361/2097152 bytes
+Template argument size: 744/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 12187/5000000 bytes
+Lua time usage: 0.089/10.000 seconds
+Lua memory usage: 1952499/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  218.124      1 -total
+ 49.19%  107.304      1 Predefinição:Referências
+ 34.40%   75.029      1 Predefinição:Esboço-matemática
+ 32.67%   71.254      1 Predefinição:Esboço_personalizado
+ 29.79%   64.981      1 Predefinição:Asbox
+ 26.34%   57.461      1 Predefinição:Navbar
+ 24.62%   53.711      1 Predefinição:Citar_livro
+ 16.31%   35.586      1 Predefinição:Portal3
+ 15.18%   33.120      1 Predefinição:Portal3/Portais
+ 11.02%   24.045      1 Predefinição:Mathworld
+-->
+
+<!-- Saved in parser cache with key ptwiki:pcache:3636285:|#|:idhash:canonical and timestamp 20250330032353 and revision id 66637148. Rendering was triggered because: page-view
+ -->
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="https://auth.wikimedia.org/loginwiki/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Obtida de "<a dir="ltr" href="https://pt.wikipedia.org/w/index.php?title=Teoria_espectral_de_grafos&amp;oldid=66637148">https://pt.wikipedia.org/w/index.php?title=Teoria_espectral_de_grafos&amp;oldid=66637148</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Especial:Categorias" title="Especial:Categorias">Categorias</a>: <ul><li><a href="/wiki/Categoria:%C3%81lgebra_linear" title="Categoria:Álgebra linear">Álgebra linear</a></li><li><a href="/wiki/Categoria:Combinat%C3%B3ria" title="Categoria:Combinatória">Combinatória</a></li><li><a href="/wiki/Categoria:Teoria_dos_grafos" title="Categoria:Teoria dos grafos">Teoria dos grafos</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Categorias ocultas: <ul><li><a href="/wiki/Categoria:!CS1_ingl%C3%AAs-fontes_em_l%C3%ADngua_(en)" title="Categoria:!CS1 inglês-fontes em língua (en)">!CS1 inglês-fontes em língua (en)</a></li><li><a href="/wiki/Categoria:!Predefini%C3%A7%C3%A3o_Webarchive_wayback_links" title="Categoria:!Predefinição Webarchive wayback links">!Predefinição Webarchive wayback links</a></li><li><a href="/wiki/Categoria:!P%C3%A1ginas_que_usam_hiperliga%C3%A7%C3%B5es_m%C3%A1gicas_ISBN" title="Categoria:!Páginas que usam hiperligações mágicas ISBN">!Páginas que usam hiperligações mágicas ISBN</a></li><li><a href="/wiki/Categoria:!Esbo%C3%A7os_sobre_matem%C3%A1tica" title="Categoria:!Esboços sobre matemática">!Esboços sobre matemática</a></li><li><a href="/wiki/Categoria:!Esbo%C3%A7os_maiores_que_10000_bytes" title="Categoria:!Esboços maiores que 10000 bytes">!Esboços maiores que 10000 bytes</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Esta página foi editada pela última vez às 23h14min de 20 de setembro de 2023.</li>
+	<li id="footer-info-copyright">Este texto é disponibilizado nos termos da licença <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0) da Creative Commons</a>;
+pode estar sujeito a condições adicionais.
+Para mais detalhes, consulte as <a class="external text" href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use">condições de utilização</a>.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/pt-br">Política de privacidade</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikip%C3%A9dia:Sobre">Sobre a Wikipédia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikip%C3%A9dia:Aviso_geral">Avisos gerais</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Código de conduta</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Programadores</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/pt.wikipedia.org">Estatísticas</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Declaração sobre cookies</a></li>
+	<li id="footer-places-mobileview"><a href="//pt.m.wikipedia.org/w/index.php?title=Teoria_espectral_de_grafos&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Versão móvel</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left vector-button-flush-right" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Busca</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input"
+									
+									type="search" name="search" placeholder="Pesquisar na Wikipédia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Especial:Pesquisar">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Pesquisar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Conteúdo" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Alternar o índice"  >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet"></span>
+
+<span class="vector-dropdown-label-text">Alternar o índice</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span class="mw-page-title-main">Teoria espectral de grafos</span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language"></span>
+
+<span>13 línguas</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive"></span>
+
+<span>Adicionar tópico</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-5b9b4f8748-45pw2","wgBackendResponseTime":178,"wgPageParseReport":{"limitreport":{"cputime":"0.238","walltime":"0.469","ppvisitednodes":{"value":1626,"limit":1000000},"postexpandincludesize":{"value":15361,"limit":2097152},"templateargumentsize":{"value":744,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":12187,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  218.124      1 -total"," 49.19%  107.304      1 Predefinição:Referências"," 34.40%   75.029      1 Predefinição:Esboço-matemática"," 32.67%   71.254      1 Predefinição:Esboço_personalizado"," 29.79%   64.981      1 Predefinição:Asbox"," 26.34%   57.461      1 Predefinição:Navbar"," 24.62%   53.711      1 Predefinição:Citar_livro"," 16.31%   35.586      1 Predefinição:Portal3"," 15.18%   33.120      1 Predefinição:Portal3/Portais"," 11.02%   24.045      1 Predefinição:Mathworld"]},"scribunto":{"limitreport-timeusage":{"value":"0.089","limit":"10.000"},"limitreport-memusage":{"value":1952499,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-6df8dbf59d-xbsmw","timestamp":"20250330032353","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Teoria espectral de grafos","url":"https:\/\/pt.wikipedia.org\/wiki\/Teoria_espectral_de_grafos","sameAs":"http:\/\/www.wikidata.org\/entity\/Q3180727","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q3180727","author":{"@type":"Organization","name":"Contribuidores dos projetos da Wikimedia"},"publisher":{"@type":"Organization","name":"Funda\u00e7\u00e3o Wikimedia, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2012-05-04T14:18:20Z","dateModified":"2023-09-20T23:14:45Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/b\/bb\/Complete-edge-coloring.svg"}</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "titulo": "Pioneer 10",
+    "Tipo": "Sobrevoo",
+    "Operador(es)": "NASA ARC",
+    "Identificação NSSDC": "1972-012A",
+    "Identificação SATCAT": "5860",
+    "Fabricante": "TRW Inc.",
+    "Massa": "258,8 kg",
+    "Potência elétrica": "155 watts",
+    "Geração de energia": "Gerador termoelétrico de radioisótopos",
+    "Contratante(s)": "Convair General Dynamics",
+    "Data de lançamento": "02 de março de 1972",
+    "Veículo de lançamento": "Atlas SLV-3C Centaur-D Star-37E",
+    "Local de lançamento": "Cabo Canaveral , LC-36A",
+    "Destino": "Sistema Solar exterior",
+    "Desativação": "23 de janeiro de 2003",
+    "Periastro": "Júpiter: 132 252 km ( 03 de dezembro de 1973 )"
+}

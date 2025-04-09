@@ -1,0 +1,11 @@
+{
+    "titulo": "Quicksort",
+    "classe": "Algoritmo de ordenação",
+    "estrutura de dados": "Array , Listas ligadas",
+    "complexidade pior caso": "O\n\n(\n\nn\n\n2\n\n\n)\n\n\n{\\displaystyle {O}(n^{2})}",
+    "complexidade caso médio": "O\n\n(\nn\nlog\n⁡\nn\n)\n\n\n{\\displaystyle {O}(n\\log n)}",
+    "complexidade melhor caso": "O\n\n(\nn\nlog\n⁡\nn\n)\n\n\n{\\displaystyle {O}(n\\log n)}",
+    "complexidade de espaços pior caso": "O\n(\nn\n)\n\n\n{\\displaystyle O(n)}",
+    "otimo": "Não",
+    "estabilidade": "não-estável"
+}

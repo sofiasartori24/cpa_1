@@ -1,0 +1,21 @@
+{
+    "titulo": "Neurofibromatose",
+    "Sinónimos": "Doença de Von Recklinghausen",
+    "Especialidade": "Neurocirurgia",
+    "Sintomas": "Pequenos tumores na pele, escoliose , perda auditiva , perda visual [1]",
+    "Início habitual": "Do nascimento ao início da idade adulta [1]",
+    "Duração": "Crónica [1]",
+    "Tipos": "Neurofibromatose tipo I (NF1), Neurofibromatose tipo II (NF2), schwannomatose [1]",
+    "Causas": "Genéticas [1]",
+    "Método de diagnóstico": "Sintomas, exames genéticos [2]",
+    "Tratamento": "Cirurgia, radioterapia [2]",
+    "Prognóstico": "NF1 : esperança de vida normal [1] NF2 : menor esperança de vida [1]",
+    "Frequência": "NF1 :1 em 3500 NF2 : 1 em 25000 (EUA) [1]",
+    "CID-11": "LD2D.1",
+    "CID-10": "Q85.01, Q85.00, Q85.02",
+    "CID-9": "237.70, 237.72, 237.7, 237.71",
+    "CID-CID-O": "9540/0, 9540/1",
+    "OMIM": "162200, 101000, 162270, 162210, 162260, 162270",
+    "eMedicine": "1112001",
+    "MeSH": "D017253"
+}

@@ -1,0 +1,11 @@
+{
+    "titulo": "Colossus",
+    "Desenvolvedor": "Tommy Flowers, assistido por Sidney Broadhurst, William Chandler e para as máquinas Mark 2, Allen Coombs",
+    "Fabricante": "Post Office Research Station",
+    "Comercializado": "1943",
+    "Descontinuado": "8 de Junho de 1945",
+    "Lançamento": "Mark I : Dezembro de 1943 Mark II : 1 de Junho de 1944",
+    "Processador": "Circuito customizado usando válvulas e tiratrons no Mark I (1600) e Mark 2 (2400).",
+    "Memória": "Nenhum (sem RAM)",
+    "Entrada": "Fita de papel com até 20.000 caracteres de 5 bits em um loop contínuo"
+}

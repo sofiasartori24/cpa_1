@@ -1,0 +1,20 @@
+{
+    "titulo": "Asma",
+    "Especialidade": "Pneumologia",
+    "Sintomas": "Episódios recorrentes de respiração sibilante , tosse , aperto no peito e falta de ar [1]",
+    "Duração": "Crónica [2]",
+    "Causas": "Fatores genéticos e ambientais [3]",
+    "Fatores de risco": "Poluição do ar , alergénios [2]",
+    "Método de diagnóstico": "Baseado nos sintomas, resposta à terapia, espirometria [4]",
+    "Tratamento": "Evitar os fatores desencadeantes, corticosteroides por inalação, salbutamol [5] [6]",
+    "Frequência": "358 milhões (2015) [7]",
+    "Mortes": "397 100 (2015) [8]",
+    "CID-11": "CA23",
+    "CID-10": "J45",
+    "CID-9": "493",
+    "OMIM": "600807",
+    "DiseasesDB": "1006",
+    "MedlinePlus": "000141",
+    "eMedicine": "med/177 emerg/43",
+    "MeSH": "D001249"
+}

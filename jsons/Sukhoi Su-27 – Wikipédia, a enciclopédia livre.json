@@ -1,0 +1,32 @@
+{
+    "titulo": "Sukhoi Su-27 (OTAN: Flanker)\n\n\n\n\n\n\n\n\n\n",
+    "Tipo / Missão": "Caça",
+    "País de origem": "União Soviética Rússia",
+    "Fabricante": "Sukhoi",
+    "Quantidade produzida": "680 [1]",
+    "Custo unitário": "US$ 37.000.000 [2]",
+    "Primeiro voo em": "1977 (48 anos)",
+    "Introduzido em": "1985",
+    "Tripulação": "1",
+    "Comprimento": "21,9 m (71,9 ft )",
+    "Envergadura": "14,7 m (48,2 ft )",
+    "Altura": "5,92 m (19,4 ft )",
+    "Área das asas": "62 m² (667 ft² )",
+    "Alongamento": "3.5",
+    "Peso vazio": "16 380 kg (36 100 lb )",
+    "Peso carregado": "23 430 kg (51 700 lb )",
+    "Peso máx. de decolagem": "30 450 kg (67 100 lb )",
+    "Motor(es)": [
+        "Empuxo seco: 7 670 kgf (75 200 N) cada",
+        "Empuxo em pós-combustão: 12 500 kgf (123 000 N) cada"
+    ],
+    "Velocidade máxima": "2 500 km/h (1 350 kn )",
+    "Velocidade de cruzeiro": "1 400 km/h (756 kn )",
+    "Velocidade máx. em, Mach": "2.35 Ma",
+    "Alcance bélico": "3 530 km (2 190 mi )",
+    "Teto máximo": "19 500 m (64 000 ft )",
+    "Metralhadoras, /, Canhões": "Canhão GSh-30-1 de 30mm",
+    "Foguetes": "S-8 , S-13 , S-24 , S-25",
+    "Mísseis": "R-27 , R-77 , R-73 , Kh-29 , Kh-31 , Kh-35",
+    "Bombas": "FAB-250, FAB-500, RBK-250, RBK-500, KAB-500KR , KAB-500L"
+}

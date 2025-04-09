@@ -1,0 +1,21 @@
+{
+    "titulo": "Peste",
+    "Especialidade": "Infectologia",
+    "Sintomas": "Febre , fraqueza, dor de cabeça [1]",
+    "Início habitual": "1-7 dias após exposição [2]",
+    "Tipos": "Peste bubónica , peste septicémica , peste pneumónica [1]",
+    "Causas": "Yersinia pestis [2]",
+    "Método de diagnóstico": "Deteção da bactéria em gânglios linfáticos, sangue, escarro [2]",
+    "Prevenção": "Vacina [2]",
+    "Tratamento": "Antibióticos e cuidados de apoio [2]",
+    "Medicação": "Gentamicina e fluoroquinolona [3]",
+    "Prognóstico": "~10% risco de morte (com tratamento) [4]",
+    "Frequência": "~600 casos por ano [2]",
+    "CID-11": "1B93",
+    "CID-10": "A20, A20.9",
+    "CID-9": "020.9, 020",
+    "DiseasesDB": "14226",
+    "MedlinePlus": "000596",
+    "eMedicine": "235627",
+    "MeSH": "D010930"
+}

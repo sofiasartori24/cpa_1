@@ -1,0 +1,22 @@
+{
+    "titulo": "CBERS-1",
+    "Tipo": "Monitoramento remoto",
+    "Operador(es)": "INPE",
+    "Identificação NSSDC": "1999-057A",
+    "Website": "www.cbers.inpe.br",
+    "Duração da missão": "3 anos",
+    "Massa": "1,5400 kg",
+    "Potência elétrica": "1,100 watts",
+    "Sucessor": "CBERS-2",
+    "Contratante(s)": "INPE CAST",
+    "Data de lançamento": "14 de outubro de 1999 , 08:16:00 UTC",
+    "Veículo de lançamento": "Chang Zheng 4B",
+    "Local de lançamento": "LC-7, Centro de Lançamento de Taiyuan, Shanxi",
+    "Referência orbital": "Órbita hélio-síncrona",
+    "Semi-eixo maior": "7,153,45 km",
+    "Excentricidade orbital": "0,0004025",
+    "Periastro": "779 km",
+    "Apoastro": "785 km",
+    "Inclinação orbital": "98,3 graus",
+    "Período orbital": "100,35 minutos"
+}

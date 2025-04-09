@@ -1,0 +1,26 @@
+{
+    "titulo": "Alfabeto ucraniano",
+    "Tipo": "Alfabeto",
+    "Línguas": "ucraniano",
+    "Período de tempo": "Século X (Eslavo oriental antigo) — presente; ortografia moderna: desde o século XVIII",
+    "Status": "Escrita nacional e oficial da Ucrânia",
+    "Sistemas-pais": [
+        "Escrita proto-sinaíticaAlfabeto grego (em partes alfabeto glagolítico)Alfabeto cirílico arcaicoAlfabeto ucraniano",
+        "Alfabeto grego (em partes alfabeto glagolítico)Alfabeto cirílico arcaicoAlfabeto ucraniano",
+        "Alfabeto cirílico arcaicoAlfabeto ucraniano",
+        "Alfabeto ucraniano",
+        ""
+    ],
+    "Sistemas-filhos": "Pérmico antigo",
+    "Sistemas-irmãos": [
+        "Ucraniano latinizado\nRussino da Panônia\nLíngua russina\nRusso\nBúlgaro\nBielorrusso",
+        "Ucraniano latinizado",
+        "Russino da Panônia",
+        "Língua russina",
+        "Russo",
+        "Búlgaro",
+        "Bielorrusso"
+    ],
+    "Direção": "Esquerda-para-direita",
+    "ISO 15924": "Cyrl, 220"
+}

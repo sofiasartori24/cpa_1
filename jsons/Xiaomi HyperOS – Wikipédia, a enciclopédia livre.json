@@ -1,0 +1,18 @@
+{
+    "titulo": "Xiaomi HyperOS",
+    "Produção": "Xiaomi",
+    "Linguagem": "C , C++ , Java",
+    "Modelo": "Código aberto (Base modificada do Android e framework principal), com componentes de Software proprietário (Aplicativos e kits Xiaomi HyperOS)",
+    "Lançamento": "1.0.1.0 / 26 de outubro de 2023 (1 ano)",
+    "Versão estável": "HyperOS: 1.0.45.0.UNBCNXM (Xiaomi 14 Pro, 5 de junho de 2024 ; há 9 meses ) (China) 1.0.16.0.UNCEUXM (Xiaomi 14, 16 de abril de 2024 ; há 11 meses ) (Global)",
+    "Versão em teste": "OS2.0.240823.1.VNLCNXM (HyperOS 2.0) / 23 de agosto de 2024 ; há 7 meses",
+    "Mercado-alvo": "Alternativa a dispositivos com o SO Android ; Firmware padrão de fábrica para celulares e tablets Xiaomi",
+    "Idioma(s)": "82 idiomas (varia de acordo com o país)",
+    "Método de, atualização": "Over-the-air",
+    "Plataformas": "64-bit ARMv8a",
+    "Gestão de pacotes": "Android application package",
+    "Núcleo": "Kernel Vela e Kernel Linux",
+    "Interface": "Gráfica",
+    "Licença": "Proprietária",
+    "Página oficial": "www.mi.com/br/hyperos (Brasil) hyperos.mi.com (China)"
+}

@@ -1,0 +1,11 @@
+{
+    "titulo": "SQL (Structured Query Language)",
+    "Paradigma": "Declarativa",
+    "Surgido em": "1974",
+    "Última, versão": "SQL:2016 (2016)",
+    "Criado por": "Donald D. Chamberlin Raymond F. Boyce",
+    "Estilo de tipagem": "Forte, estática",
+    "Dialetos": "SQL-86, SQL-89, SQL-92 , SQL:1999 , SQL:2003 , SQL:2008 , SQL:2016",
+    "Influenciada por": "Datalog",
+    "Influenciou": "Agena , CQL , LINQ , Windows PowerShell"
+}

@@ -1,0 +1,12 @@
+{
+    "titulo": "β-lactamase",
+    "Número EC": "3.5.2.6",
+    "Número CAS": "9073-60-3--",
+    "IntEnz": "IntEnz",
+    "BRENDA": "BRENDA",
+    "ExPASy": "NiceZyme",
+    "KEGG": "KEGG",
+    "MetaCyc": "via metabólica",
+    "PRIAM": "PRIAM",
+    "Estruturas, PDB": "RCSB PDB PDBe PDBj PDBsum"
+}

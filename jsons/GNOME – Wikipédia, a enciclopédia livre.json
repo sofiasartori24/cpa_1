@@ -1,0 +1,14 @@
+{
+    "titulo": "GNOME",
+    "Desenvolvedor": "Projeto GNOME",
+    "Lançamento": "3 de março de 1999 (26 anos)",
+    "Versão, estável": "48 \"Bengaluru\" (19 de março de 2025; há 21 dias[1])",
+    "Versão em teste": "45.beta (18 de agosto de 2023; há 19 meses[2])",
+    "Idioma(s)": "mais de 38 línguas [3]",
+    "Escrito em": "C , C++ , Python , Vala , JavaScript [4]",
+    "Sistema operativo": "Linux com systemd sobre X11 ou Wayland",
+    "Gênero(s)": "Ambiente de desktop",
+    "Licença": "GNU GPLv2+",
+    "Página oficial": "www.gnome.org",
+    "Repositório": "gitlab.gnome.org/GNOME"
+}

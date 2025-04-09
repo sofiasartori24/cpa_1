@@ -1,0 +1,17 @@
+{
+    "titulo": "Devanágari",
+    "Tipo": "Abugida",
+    "Línguas": "Apabhramsha , Awadhi , Bhili , Bhojpuri , Bodo , Braj , Chhattisgarhi , Dogri , Gujarati , Garhwali Haryanvi , Hindi , Hindustani , Kashmiri , Konkani , Kumaoni , Magahi , Maithili , Marathi , Marwari , Mundari , Newari , Nepali , Pāḷi , Pahari , Prakrit , Rajasthani , Sadri , Sanskrit , Santali , Saraiki , Sherpa and Sindhi , Surjapuri , and many more",
+    "Sistemas-pais": [
+        "alfabeto fenícioalfabeto aramaico[1]BrāhmīGuptaSiddhaṃ[2][3]NāgarīDevanagari",
+        "alfabeto aramaico[1]BrāhmīGuptaSiddhaṃ[2][3]NāgarīDevanagari",
+        "BrāhmīGuptaSiddhaṃ[2][3]NāgarīDevanagari",
+        "GuptaSiddhaṃ[2][3]NāgarīDevanagari",
+        "Siddhaṃ[2][3]NāgarīDevanagari",
+        "NāgarīDevanagari",
+        "Devanagari"
+    ],
+    "Direção": "Esquerda-para-direita",
+    "ISO 15924": "Deva, 315",
+    "Conjunto de carateres Unicode": "U+0900–U+097F Devanagari, U+A8E0–U+A8FF Devanagari Extended, U+1CD0–U+1CFF Vedic Extensions"
+}
